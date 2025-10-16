@@ -1,0 +1,25 @@
+#include "main.h"
+
+/**
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line
+ *
+ * Return: Always nothing (void)
+ */
+void print_alphabet(void)
+	        {
+char c = 'a' ;
+while (c <= 'z')
+        _putchar(c);
+        }
+
+void print_alphabet_x10(void)
+{
+int i = 0;
+while (i < 10)
+{
+	 print_alphabet();
+i++;
+
+	 _putchar('\n');
+}
+}
