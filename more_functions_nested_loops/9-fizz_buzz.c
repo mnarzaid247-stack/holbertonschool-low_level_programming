@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -6,7 +5,7 @@
  *
  * Return: Always 0
  */
-int  main(void)
+int main(void)
 {
 int i = 1;
 while (i <= 100)
