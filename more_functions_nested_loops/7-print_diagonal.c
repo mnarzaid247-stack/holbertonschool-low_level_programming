@@ -16,8 +16,6 @@ else
 {
 while (n > 0)
 {
-if (i != n)
-{
 	int m = 0;
 
 	while (m < i)
@@ -25,7 +23,6 @@ if (i != n)
 		_putchar(' ');
 m++;
 	}
-}
 n--;
 i++;
 _putchar('\\');
