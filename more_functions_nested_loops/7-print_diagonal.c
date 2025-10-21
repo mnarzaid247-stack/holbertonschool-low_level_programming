@@ -22,7 +22,7 @@ if (i != n)
 
 	while (m < i)
 	{
-		putchar(' ');
+		_putchar(' ');
 m++;
 	}
 }
