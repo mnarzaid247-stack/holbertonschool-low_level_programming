@@ -22,5 +22,4 @@ for (n = size ; n > 0 ; n--)
 _putchar('\n');
 }
 }
-_putchar('\n');
 }
