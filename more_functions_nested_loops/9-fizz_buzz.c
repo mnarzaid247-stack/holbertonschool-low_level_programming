@@ -28,7 +28,7 @@ else if (i % 5 == 0)
 }
 if (i < 100)
 	printf(" ");
-	i++;
+i++;
 }
 printf("\n");
 return (0);
