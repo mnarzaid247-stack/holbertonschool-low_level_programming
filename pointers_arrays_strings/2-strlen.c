@@ -2,8 +2,9 @@
 
 /**
  * _strlen - count the litters
- *@s : pointer
- * return an int
+ *@s: pointer
+ *
+ * Return: an int
  */
 int _strlen(char *s)
 {
