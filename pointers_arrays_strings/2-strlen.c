@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * count the litters
- *
+ * _strlen - count the litters
+ *@s : pointer
  * return an int
  */
 int _strlen(char *s)
