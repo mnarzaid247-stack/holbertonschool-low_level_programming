@@ -33,5 +33,5 @@ i++;
 if (i == 0)
 return (0);
 else
-return (r *n);
+return (r);
 }
