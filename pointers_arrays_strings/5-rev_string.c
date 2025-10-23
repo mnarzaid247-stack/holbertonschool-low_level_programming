@@ -19,8 +19,8 @@ s++;
 }
 char *m = s - 1;
 char x;
-int j = i / 2;
-for (; j != 0 ; m--, r++, j--)
+
+for (int j = 0; j < i / 2 ; m--, r++, j--)
 {
 x = *r;
 *r = *m;
