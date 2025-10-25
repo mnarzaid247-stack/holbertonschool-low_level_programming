@@ -14,11 +14,17 @@ int i;
 int j;
 int z = 0;
 int s = n - 1;
-for(i = 0 ; i != n / 2 ; i++ ,s--)
+if (n > 0)
+{
+for (i = 0 ; i != n / 2 ; i++, s--)
 {
 j = a[i];
 z = a[s];
 a[s] = j;
 a[i] = z;
 }
+}
+else
+if (n <= 0)
+return;
 }
