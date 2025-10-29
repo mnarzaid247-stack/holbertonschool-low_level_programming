@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/** 
+/**
  * main - program that prints all arguments
  *
  * @argc: integer
