@@ -27,8 +27,6 @@ for (j = 0 ; argv[i][j] != '\0' ; j++)
 {
 if (isdigit(argv[i][j]))
 {
-num = atoi(argv[i]);
-num2 = num2 + num;
 }
 else
 {
@@ -36,6 +34,8 @@ printf("Error\n");
 return (1);
 }
 }
+num = atoi(argv[i]);
+num2 = num2 + num;
 i++;
 }
 printf("%d\n", num2);
