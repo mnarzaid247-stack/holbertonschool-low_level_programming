@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array
  *
@@ -19,13 +18,14 @@ if (height <= 0)
 	return (NULL);
 p = malloc(sizeof(int *) * height); 
 for (j = 0 ; j < height ; j++)
-    p[j] = malloc(sizeof(int) * width);  
+p[j] = malloc(sizeof(int) * width);
 if (p == NULL)
-	return (NULL);
+return (NULL);
 for (j = 0 ; j < height ; j++)
 {
 for (i = 0 ; i < width ; i++)
-       p[j][i] = 0;
+p[j][i] = 0;
 _putchar ('\n');
 }
+return (p);
 }
