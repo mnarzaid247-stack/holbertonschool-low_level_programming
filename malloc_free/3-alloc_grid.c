@@ -16,16 +16,24 @@ if (width <= 0)
 	return (NULL);
 if (height <= 0)
 	return (NULL);
-p = malloc(sizeof(int *) * height); 
-for (j = 0 ; j < height ; j++)
-p[j] = malloc(sizeof(int) * width);
+p = malloc(sizeof(int *) * height);
 if (p == NULL)
 return (NULL);
+for (j = 0; j < height; j++)
+{
+p[j] = malloc(sizeof(int) * width);
+if (p[j] == NULL)
+{
+for (i = 0; i < j; i++)
+free(p[i]);
+free(p);
+return (NULL);
+}
+}
 for (j = 0 ; j < height ; j++)
 {
 for (i = 0 ; i < width ; i++)
 p[j][i] = 0;
-_putchar ('\n');
 }
 return (p);
 }
