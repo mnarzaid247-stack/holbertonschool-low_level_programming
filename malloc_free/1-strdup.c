@@ -18,6 +18,8 @@ for (j = 0 ; str[j] != '\0' ; j++)
 {
 }
 p = malloc(j + 1);
+if (p == NULL)
+	return (NULL);
 for (i = 0 ; i <= j ; i++)
 	p[i] = str[i];
 return (p);
