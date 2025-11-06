@@ -38,12 +38,12 @@ free(name1);
 free(owner1);
 return (NULL);
 }
-for (m = 0 ; name[m] < i ; m++)
+for (m = 0 ; m < i ; m++)
 name1[m] = name[m];
-for (k = 0 ; owner[k] < j ; k++)
+for (k = 0 ; k < j ; k++)
 owner1[k] = owner[k];
 name1[m] = '\0';
-owner1[k] = '\0'; 
+owner1[k] = '\0';
 p->name = name1;
 p->age = age;
 p->owner = owner1;
