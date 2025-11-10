@@ -19,8 +19,7 @@ return (-1);
 for (i = 0 ; i < size ; i++)
 {
 if (cmp(array[i]) != 0)
-return (cmp(array[i]));
+return (i);
 }
-else
 return (-1);
 }
