@@ -18,40 +18,30 @@ char *sep = "";
 va_start(args, format);
 while (format && format[i] != '\0')
 {
-if (format[i])
-{
 switch (format[i])
 {
 case 'c':
-printf("%s", sep);
-printf("%c", va_arg(args, int));
+printf("%s%c", sep, va_arg(args, int));
 sep = ", ";
 break;
 case 'i':
-printf("%s", sep);
-printf("%d", va_arg(args, int));
+printf("%s%d", sep, va_arg(args, int));
 sep = ", ";
 break;
 case 'f':
-printf("%s", sep);
-printf("%f", va_arg(args, double));
+printf("%s%f", sep, va_arg(args, double));
 sep = ", ";
 break;
 case 's':
-{
 str = va_arg(args, char *);
-printf("%s", sep);
-if (str == NULL)
-printf("(nil)");
-else
-printf("%s", str);
+if (!str)
+str = "(nil)";
+printf("%s%s", sep, str);
 sep = ", ";
 break;
-}
 }
 i++;
 }
 printf("\n");
 va_end(args);
-}
 }
