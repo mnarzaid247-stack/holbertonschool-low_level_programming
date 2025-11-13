@@ -23,24 +23,32 @@ if (format[i])
 switch (format[i])
 {
 case 'c':
+printf("%s", sep);
 printf("%c", va_arg(args, int));
+sep = ", ";
 break;
 case 'i':
+printf("%s", sep);
 printf("%d", va_arg(args, int));
+sep = ", ";
 break;
 case 'f':
+printf("%s", sep);
 printf("%f", va_arg(args, double));
+sep = ", ";
 break;
 case 's':
-str = va_arg(args, char *);
+{
+char *str = va_arg(args, char *);
+printf("%s", sep);
 if (str == NULL)
 printf("(nil)");
 else
 printf("%s", str);
+sep = ", ";
 break;
 }
 }
-printf(",%s", sep
 i++;
 }
 printf("\n");
