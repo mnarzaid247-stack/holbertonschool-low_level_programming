@@ -39,7 +39,7 @@ sep = ", ";
 break;
 case 's':
 {
-char *str = va_arg(args, char *);
+str = va_arg(args, char *);
 printf("%s", sep);
 if (str == NULL)
 printf("(nil)");
