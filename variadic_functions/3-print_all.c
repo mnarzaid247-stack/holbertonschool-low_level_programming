@@ -40,6 +40,7 @@ printf("%s", str);
 break;
 }
 }
+printf(",%s", sep
 i++;
 }
 printf("\n");
