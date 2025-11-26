@@ -5,7 +5,7 @@
 
 int _putchar(char c);
 
-typedef struct list_s 
+typedef struct list_s
 {
 char *str;
 unsigned int len;
