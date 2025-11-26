@@ -21,7 +21,7 @@ return (NULL);
 new->str = strdup(str);
 if (new->str == NULL)
 {
-free(new->str);
+free(new);
 return (NULL);
 }
 while (str[i] != '\0')
