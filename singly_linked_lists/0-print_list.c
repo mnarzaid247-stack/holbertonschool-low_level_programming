@@ -4,7 +4,7 @@
 /**
  * print_list - printing the lists
  *
- * @list_t: type of the list
+ * @h: type of the list
  *
  * Return: size_t
  */
