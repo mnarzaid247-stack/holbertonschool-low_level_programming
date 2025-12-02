@@ -28,7 +28,7 @@ if (r == -1)
 	close(i);
 	return (0);
 }
-w = write(1, buffer, r);
+w = write(STDOUT_FILENO, buffer, r);
 if (w == -1)
 {
 free(buffer);
