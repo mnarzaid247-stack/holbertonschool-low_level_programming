@@ -29,7 +29,7 @@ if (r == -1)
 	return (0);
 }
 w = write(1, buffer, r);
-if (w == -1 || w != r)
+if (w == -1)
 {
 free(buffer);
 close(i);
