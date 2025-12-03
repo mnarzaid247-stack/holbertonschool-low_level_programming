@@ -10,9 +10,9 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-size_t l = 0;
+int l = 0;
 int o;
-size_t w;
+int w;
 if (filename == NULL)
 	return (-1);
 o = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
