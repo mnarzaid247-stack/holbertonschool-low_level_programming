@@ -9,7 +9,6 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
-int i;
 hash_node_t *node;
 hash_node_t *node2;
 unsigned long int j;
