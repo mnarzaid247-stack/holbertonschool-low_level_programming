@@ -101,4 +101,3 @@ Note: Compilation steps may vary depending on the specific project task.
 
 Manar Al-Zhrani  
 GitHub: https://github.com/mnarzaid247-stack  
-LinkedIn: https://linkedin.com/in/manar-al-zhrani
